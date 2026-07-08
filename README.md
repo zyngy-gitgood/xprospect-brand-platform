@@ -60,6 +60,13 @@ The theme contains only reusable architecture for Sprint 1:
 - News Card
 - Recruit Card
 
+## Sprint 2 Visible Brand Layer
+
+- Sticky premium header with logo placeholder, center navigation, CTA, and accessible mobile menu
+- Front-page hero with Japanese brand copy, CTA buttons, and abstract AI/business visual placeholder
+- Footer with company name, slogan, navigation, contact/privacy links, and copyright
+- `templates/front-page.html` with section-title placeholders only
+
 ## Development Notes
 
 - Do not use Elementor.

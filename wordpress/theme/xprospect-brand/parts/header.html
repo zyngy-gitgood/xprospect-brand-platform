@@ -1,6 +1,25 @@
-<!-- wp:group {"className":"xprospect-header","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
-<div class="wp-block-group xprospect-header">
-	<!-- wp:site-title {"level":0} /-->
-	<!-- wp:navigation {"layout":{"type":"flex","justifyContent":"right"}} /-->
+<!-- wp:html -->
+<div class="xprospect-site-header" data-xprospect-header>
+	<div class="xprospect-header">
+		<a class="xprospect-header__brand" href="/" aria-label="X-PROSPECT ホーム">
+			<span class="xprospect-header__logo" aria-hidden="true">XP</span>
+			<span class="xprospect-header__wordmark">X-PROSPECT</span>
+		</a>
+
+		<button class="xprospect-header__toggle" type="button" aria-controls="xprospect-primary-navigation" aria-expanded="false" data-xprospect-menu-toggle>
+			<span class="xprospect-header__toggle-line" aria-hidden="true"></span>
+			<span class="screen-reader-text">メニューを開閉</span>
+		</button>
+
+		<nav class="xprospect-header__nav" id="xprospect-primary-navigation" aria-label="Primary navigation" data-xprospect-menu>
+			<a href="#ai-introduction">AI導入</a>
+			<a href="#services">サービス</a>
+			<a href="#technology">技術</a>
+			<a href="#recruit">採用</a>
+			<a href="#company">会社情報</a>
+		</nav>
+
+		<a class="xprospect-header__cta" href="#contact">無料相談</a>
+	</div>
 </div>
-<!-- /wp:group -->
+<!-- /wp:html -->
