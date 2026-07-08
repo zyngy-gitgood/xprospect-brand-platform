@@ -252,5 +252,49 @@
       "title": "Footer",
       "area": "footer"
     }
+  ],
+  "customTemplates": [
+    {
+      "name": "page-ai",
+      "title": "AI導入支援",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "page-services",
+      "title": "サービス",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "page-technology",
+      "title": "技術",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "page-recruit",
+      "title": "採用情報",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "page-company",
+      "title": "会社情報",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "page-contact",
+      "title": "お問い合わせ",
+      "postTypes": [
+        "page"
+      ]
+    }
   ]
 }

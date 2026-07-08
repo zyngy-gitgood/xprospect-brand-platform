@@ -88,6 +88,13 @@ The TOP page still uses polished placeholders instead of final images.
 - Polished hero visual placeholder with floating business/AI cards
 - Refined section hierarchy, hover states, and scroll reveal support
 
+## Sprint 5 Static Pages Foundation
+
+- Native block-theme static page templates for AI導入支援, サービス, 技術, 採用, 会社情報, and お問い合わせ
+- Header and footer navigation updated to static page URLs
+- Shared page hero, placeholder content, CTA, and contact form placeholder styles
+- Templates registered as selectable page templates in `theme.json`
+
 ## Development Notes
 
 - Do not use Elementor.
