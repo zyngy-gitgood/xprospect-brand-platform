@@ -115,6 +115,12 @@ The TOP page still uses polished placeholders instead of final images.
 - Installable ZIP output prepared at `dist/xprospect-brand.zip`
 - WordPress install guide and staging test checklist added
 
+## Sprint 10 Staging QA
+
+- Staging deployment QA report added
+- Deployment marked blocked pending staging WordPress access
+- Theme ZIP and local package checks revalidated
+
 ## Development Notes
 
 - Do not use Elementor.
