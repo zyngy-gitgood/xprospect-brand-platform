@@ -17,6 +17,7 @@ add_action(
 		add_theme_support('wp-block-styles');
 		add_theme_support('responsive-embeds');
 		add_theme_support('editor-styles');
+		add_theme_support('title-tag');
 		add_editor_style('assets/css/base.css');
 	}
 );

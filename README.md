@@ -95,6 +95,13 @@ The TOP page still uses polished placeholders instead of final images.
 - Shared page hero, placeholder content, CTA, and contact form placeholder styles
 - Templates registered as selectable page templates in `theme.json`
 
+## Sprint 7 SEO And Accessibility
+
+- Theme-level SEO metadata foundation without plugin dependency
+- Page-aware title and description defaults
+- Open Graph, Twitter card, canonical, and OGP image placeholders
+- Semantic and accessibility refinements
+
 ## Development Notes
 
 - Do not use Elementor.
