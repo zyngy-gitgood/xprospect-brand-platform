@@ -35,3 +35,13 @@ add_action(
 		);
 	}
 );
+
+add_action(
+	'wp_head',
+	static function (): void {
+		printf(
+			'<link rel="icon" href="%s" type="image/svg+xml">' . "\n",
+			esc_url(home_url('/assets/logo/favicon.svg'))
+		);
+	}
+);

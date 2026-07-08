@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="180" viewBox="0 0 680 180" role="img" aria-labelledby="title desc">
+  <title id="title">X-PROSPECT Horizontal Logo</title>
+  <desc id="desc">Temporary horizontal X-PROSPECT logo with tagline.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="16" y1="12" x2="144" y2="156" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#133A63"/>
+      <stop offset=".58" stop-color="#2F80ED"/>
+      <stop offset="1" stop-color="#3DD5F3"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#markGradient)" d="M80 13 146 51v78l-66 38-66-38V51l66-38Z"/>
+  <path fill="#fff" fill-opacity=".14" d="M80 29 132 59v61l-52 30-52-30V59l52-30Z"/>
+  <path fill="#fff" d="M44 54h23l14 20 15-20h22L94 88l27 38H98L81 103l-17 23H42l27-38-25-34Z"/>
+  <path fill="#3DD5F3" d="M79 81 101 54h17L88 94l-9-13Z"/>
+  <text x="178" y="79" fill="#101828" font-family="Manrope, Inter, Arial, sans-serif" font-size="42" font-weight="800" letter-spacing="3">X-PROSPECT</text>
+  <text x="181" y="120" fill="#133A63" font-family="'Noto Sans JP', Manrope, Arial, sans-serif" font-size="20" font-weight="700">AIを、現場で使える力に。</text>
+</svg>

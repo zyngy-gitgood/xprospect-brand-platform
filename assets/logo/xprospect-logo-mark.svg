@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">X-PROSPECT Logo Mark</title>
+  <desc id="desc">Temporary hexagon logo mark with an X motif in navy, blue, and cyan.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="44" y1="34" x2="212" y2="222" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#133A63"/>
+      <stop offset="0.58" stop-color="#2F80ED"/>
+      <stop offset="1" stop-color="#3DD5F3"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#markGradient)" d="M128 12 226 69v118l-98 57-98-57V69l98-57Z"/>
+  <path fill="#fff" fill-opacity=".14" d="M128 30 210 78v100l-82 48-82-48V78l82-48Z"/>
+  <path fill="#fff" d="M73 75h34l22 30 22-30h32l-37 51 40 55h-34l-24-34-25 34H71l40-55-38-51Z"/>
+  <path fill="#3DD5F3" d="M126 116 159 75h24l-45 60-12-19Z"/>
+</svg>

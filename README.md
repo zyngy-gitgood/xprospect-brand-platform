@@ -80,6 +80,14 @@ The theme contains only reusable architecture for Sprint 1:
 
 The TOP page still uses polished placeholders instead of final images.
 
+## Sprint 4 Design Polish And Logo
+
+- Temporary SVG logo suite in `assets/logo/`
+- Header and footer logo integration
+- Favicon SVG reference
+- Polished hero visual placeholder with floating business/AI cards
+- Refined section hierarchy, hover states, and scroll reveal support
+
 ## Development Notes
 
 - Do not use Elementor.

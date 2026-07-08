@@ -25,6 +25,7 @@ html {
 
 body {
 	margin: 0;
+	overflow-x: clip;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
@@ -118,7 +119,12 @@ summary:focus-visible,
 
 .xprospect-button:hover,
 .wp-block-button__link:hover {
+	box-shadow: 0 14px 32px rgba(19, 58, 99, 0.16);
 	transform: translateY(-1px);
+}
+
+.xprospect-button--secondary:hover {
+	background: var(--xprospect-color-section);
 }
 
 .xprospect-card,
@@ -211,6 +217,16 @@ summary:focus-visible,
 	font-weight: 800;
 	letter-spacing: 0.08em;
 	text-decoration: none;
+}
+
+.xprospect-header__logo-image {
+	width: clamp(156px, 38vw, 218px);
+	height: auto;
+}
+
+.xprospect-footer__logo-image {
+	width: min(240px, 72vw);
+	height: auto;
 }
 
 .xprospect-header__logo {
@@ -438,10 +454,49 @@ summary:focus-visible,
 	overflow: hidden;
 }
 
+.xprospect-hero__visual::before {
+	position: absolute;
+	inset: -20%;
+	background:
+		radial-gradient(circle at 30% 24%, rgba(61, 213, 243, 0.28), transparent 22%),
+		radial-gradient(circle at 72% 78%, rgba(47, 128, 237, 0.22), transparent 26%);
+	content: "";
+	filter: blur(8px);
+}
+
+.xprospect-hero__data-lines {
+	position: absolute;
+	inset: 12%;
+}
+
+.xprospect-hero__data-lines span {
+	position: absolute;
+	right: 8%;
+	left: 8%;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, rgba(19, 58, 99, 0.24), transparent);
+}
+
+.xprospect-hero__data-lines span:nth-child(1) {
+	top: 24%;
+	transform: rotate(12deg);
+}
+
+.xprospect-hero__data-lines span:nth-child(2) {
+	top: 52%;
+	transform: rotate(-10deg);
+}
+
+.xprospect-hero__data-lines span:nth-child(3) {
+	top: 76%;
+	transform: rotate(8deg);
+}
+
 .xprospect-ai-orbit {
 	position: relative;
 	width: min(72vw, 440px);
 	aspect-ratio: 1;
+	z-index: 1;
 }
 
 .xprospect-ai-orbit__core,
@@ -496,7 +551,59 @@ summary:focus-visible,
 	background: var(--xprospect-color-primary);
 }
 
+.xprospect-hero-card {
+	position: absolute;
+	z-index: 2;
+	width: min(220px, 64vw);
+	padding: var(--wp--preset--spacing--16);
+	border: 1px solid rgba(255, 255, 255, 0.72);
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.82);
+	box-shadow: 0 18px 42px rgba(16, 24, 40, 0.12);
+	backdrop-filter: blur(16px);
+	animation: xprospect-float 7s ease-in-out infinite;
+}
+
+.xprospect-hero-card span,
+.xprospect-hero-card strong {
+	display: block;
+}
+
+.xprospect-hero-card span {
+	color: var(--xprospect-color-primary-light);
+	font-size: 0.72rem;
+	font-weight: 900;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.xprospect-hero-card strong {
+	margin-top: var(--wp--preset--spacing--8);
+	color: var(--xprospect-color-dark);
+	font-size: 0.95rem;
+	line-height: 1.5;
+}
+
+.xprospect-hero-card--one {
+	top: 8%;
+	left: 6%;
+}
+
+.xprospect-hero-card--two {
+	right: 5%;
+	bottom: 12%;
+	animation-delay: -2s;
+}
+
+.xprospect-hero-card--three {
+	right: 12%;
+	top: 18%;
+	display: none;
+	animation-delay: -4s;
+}
+
 .xprospect-top-section {
+	position: relative;
 	padding-block: var(--wp--preset--spacing--64);
 	background: var(--xprospect-color-background);
 }
@@ -573,13 +680,30 @@ summary:focus-visible,
 	border-radius: var(--xprospect-radius-card);
 	background: rgba(255, 255, 255, 0.92);
 	box-shadow: 0 10px 34px rgba(16, 24, 40, 0.06);
+	overflow: hidden;
 	transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.xprospect-top-card::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 4px;
+	background: linear-gradient(90deg, var(--xprospect-color-primary-light), var(--xprospect-color-accent));
+	content: "";
+	opacity: 0;
+	transition: opacity 180ms ease;
 }
 
 .xprospect-top-card:hover {
 	border-color: rgba(47, 128, 237, 0.24);
 	box-shadow: var(--wp--preset--shadow--medium);
 	transform: translateY(-4px);
+}
+
+.xprospect-top-card:hover::before {
+	opacity: 1;
 }
 
 .xprospect-top-card p,
@@ -625,7 +749,9 @@ summary:focus-visible,
 }
 
 .xprospect-before-after__summary {
-	background: var(--xprospect-color-primary);
+	background:
+		radial-gradient(circle at 90% 10%, rgba(61, 213, 243, 0.28), transparent 28%),
+		var(--xprospect-color-primary);
 	color: var(--xprospect-color-background);
 }
 
@@ -724,7 +850,7 @@ summary:focus-visible,
 	min-height: 160px;
 	padding: var(--wp--preset--spacing--24);
 	border-radius: var(--xprospect-radius-card);
-	background: var(--xprospect-color-primary);
+	background: linear-gradient(145deg, var(--xprospect-color-primary), #0f2d4f);
 	color: var(--xprospect-color-background);
 }
 
@@ -823,9 +949,36 @@ summary:focus-visible,
 	line-height: 1.3;
 }
 
+.xprospect-contact-cta .xprospect-button--primary {
+	background: var(--xprospect-color-background);
+	color: var(--xprospect-color-primary);
+}
+
+.xprospect-js .xprospect-reveal {
+	opacity: 0;
+	transform: translateY(28px);
+	transition: opacity 520ms ease, transform 520ms ease;
+}
+
+.xprospect-js .xprospect-reveal.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
 @keyframes xprospect-spin {
 	to {
 		transform: rotate(360deg);
+	}
+}
+
+@keyframes xprospect-float {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
 	}
 }
 
@@ -967,6 +1120,10 @@ summary:focus-visible,
 
 	.xprospect-hero__visual {
 		min-height: 620px;
+	}
+
+	.xprospect-hero-card--three {
+		display: block;
 	}
 
 	.xprospect-card-grid--three {
