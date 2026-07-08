@@ -19,8 +19,19 @@
 			<div class="xprospect-section-heading">
 				<p class="xprospect-section-heading__eyebrow">Contact</p>
 				<h2 id="contact-intro-title">まずは課題をお聞かせください。</h2>
-				<p>AIで何ができるか分からない段階でも問題ありません。業務内容やお困りごとを伺い、検討の進め方から整理します。</p>
+				<p>具体的な要件が決まっていなくても構いません。現在の業務内容や課題を伺い、AI活用の可能性と進め方を一緒に整理します。</p>
 			</div>
+		</div>
+	</section>
+
+	<section class="xprospect-consultation-block" aria-labelledby="contact-consultation-title">
+		<div class="xprospect-consultation-block__inner">
+			<div>
+				<p class="xprospect-section-heading__eyebrow">Consultation</p>
+				<h2 id="contact-consultation-title">まずは、AIで何ができるかを整理しませんか？</h2>
+				<p>具体的な要件が決まっていなくても構いません。現在の業務内容や課題を伺い、AI活用の可能性を一緒に整理します。</p>
+			</div>
+			<a class="xprospect-button xprospect-button--primary" href="#contact-form-title">無料相談する</a>
 		</div>
 	</section>
 
@@ -28,6 +39,15 @@
 		<div class="xprospect-page-content-placeholder__inner">
 			<h2 id="contact-form-title">Contact form placeholder</h2>
 			<form class="xprospect-contact-form" aria-label="お問い合わせフォーム">
+				<fieldset class="xprospect-contact-form__wide xprospect-contact-categories">
+					<legend>ご相談カテゴリ</legend>
+					<label><input type="checkbox" name="category[]" value="ai"> <span>AI導入について</span></label>
+					<label><input type="checkbox" name="category[]" value="generative-ai"> <span>生成AI活用について</span></label>
+					<label><input type="checkbox" name="category[]" value="system"> <span>システム開発について</span></label>
+					<label><input type="checkbox" name="category[]" value="engineer"> <span>技術者・開発体制について</span></label>
+					<label><input type="checkbox" name="category[]" value="recruit"> <span>採用について</span></label>
+					<label><input type="checkbox" name="category[]" value="other"> <span>その他</span></label>
+				</fieldset>
 				<label>
 					<span>お名前</span>
 					<input type="text" name="your-name" autocomplete="name">

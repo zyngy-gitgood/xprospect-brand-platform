@@ -102,6 +102,13 @@ The TOP page still uses polished placeholders instead of final images.
 - Open Graph, Twitter card, canonical, and OGP image placeholders
 - Semantic and accessibility refinements
 
+## Sprint 8 Content Conversion
+
+- TOP page CTA flow refined for consultation conversion
+- Reusable consultation block and FAQ sections added
+- Contact page category checkboxes added
+- Business-oriented copy hierarchy improved across key pages
+
 ## Development Notes
 
 - Do not use Elementor.
