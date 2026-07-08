@@ -496,23 +496,331 @@ summary:focus-visible,
 	background: var(--xprospect-color-primary);
 }
 
-.xprospect-placeholder-section {
-	display: grid;
-	place-items: center;
-	min-height: 280px;
-	padding: var(--wp--preset--spacing--64) var(--wp--preset--spacing--16);
+.xprospect-top-section {
+	padding-block: var(--wp--preset--spacing--64);
 	background: var(--xprospect-color-background);
-	text-align: center;
 }
 
-.xprospect-placeholder-section--muted {
+.xprospect-top-section--muted {
 	background: var(--xprospect-color-section);
 }
 
-.xprospect-placeholder-section h2 {
+.xprospect-top-section--dark {
+	background:
+		radial-gradient(circle at 82% 22%, rgba(61, 213, 243, 0.22), transparent 26%),
+		linear-gradient(135deg, var(--xprospect-color-dark), var(--xprospect-color-primary));
+	color: var(--xprospect-color-background);
+}
+
+.xprospect-top-section--cta {
+	background: linear-gradient(180deg, var(--xprospect-color-section), var(--xprospect-color-background));
+}
+
+.xprospect-top-section__inner {
+	width: min(100% - 32px, var(--xprospect-container));
+	margin-inline: auto;
+}
+
+.xprospect-section-heading {
+	max-width: 760px;
+	margin-bottom: var(--wp--preset--spacing--32);
+}
+
+.xprospect-section-heading__eyebrow {
+	margin: 0 0 var(--wp--preset--spacing--12);
+	color: var(--xprospect-color-primary-light);
+	font-size: 0.78rem;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+	text-transform: uppercase;
+}
+
+.xprospect-section-heading h2 {
 	margin: 0;
-	color: var(--xprospect-color-primary);
+	color: var(--xprospect-color-dark);
+	font-size: clamp(2rem, 7vw, 3.75rem);
+	font-weight: 800;
+	letter-spacing: 0;
+	line-height: 1.18;
+}
+
+.xprospect-section-heading p:not(.xprospect-section-heading__eyebrow) {
+	margin: var(--wp--preset--spacing--24) 0 0;
+	color: rgba(16, 24, 40, 0.72);
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1.9;
+}
+
+.xprospect-top-section--dark .xprospect-section-heading h2,
+.xprospect-top-section--dark .xprospect-section-heading p:not(.xprospect-section-heading__eyebrow) {
+	color: var(--xprospect-color-background);
+}
+
+.xprospect-top-section--dark .xprospect-section-heading__eyebrow {
+	color: var(--xprospect-color-accent);
+}
+
+.xprospect-card-grid {
+	display: grid;
+	gap: var(--wp--preset--spacing--16);
+}
+
+.xprospect-top-card {
+	position: relative;
+	min-height: 160px;
+	padding: var(--wp--preset--spacing--24);
+	border: 1px solid rgba(16, 24, 40, 0.08);
+	border-radius: var(--xprospect-radius-card);
+	background: rgba(255, 255, 255, 0.92);
+	box-shadow: 0 10px 34px rgba(16, 24, 40, 0.06);
+	transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.xprospect-top-card:hover {
+	border-color: rgba(47, 128, 237, 0.24);
+	box-shadow: var(--wp--preset--shadow--medium);
+	transform: translateY(-4px);
+}
+
+.xprospect-top-card p,
+.xprospect-top-card h3 {
+	margin: 0;
+	color: var(--xprospect-color-dark);
+}
+
+.xprospect-top-card p {
+	font-size: var(--wp--preset--font-size--base);
+	font-weight: 700;
+	line-height: 1.75;
+}
+
+.xprospect-top-card h3 {
+	font-size: var(--wp--preset--font-size--large);
+	font-weight: 800;
+	line-height: 1.45;
+}
+
+.xprospect-top-card--service {
+	display: grid;
+	align-content: space-between;
+	gap: var(--wp--preset--spacing--32);
+}
+
+.xprospect-top-card--service span {
+	color: var(--xprospect-color-primary-light);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 800;
+	letter-spacing: 0.12em;
+}
+
+.xprospect-before-after {
+	display: grid;
+	gap: var(--wp--preset--spacing--16);
+}
+
+.xprospect-before-after__summary,
+.xprospect-before-after__panel {
+	padding: var(--wp--preset--spacing--24);
+	border-radius: var(--xprospect-radius-card);
+}
+
+.xprospect-before-after__summary {
+	background: var(--xprospect-color-primary);
+	color: var(--xprospect-color-background);
+}
+
+.xprospect-before-after__summary p,
+.xprospect-before-after__summary h3,
+.xprospect-before-after__panel p {
+	margin: 0;
+}
+
+.xprospect-before-after__summary p {
+	margin-bottom: var(--wp--preset--spacing--12);
+	color: var(--xprospect-color-accent);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.xprospect-before-after__summary h3 {
 	font-size: var(--wp--preset--font-size--xl);
+	line-height: 1.25;
+}
+
+.xprospect-before-after__panel {
+	border: 1px solid rgba(16, 24, 40, 0.08);
+	background: var(--xprospect-color-section);
+}
+
+.xprospect-before-after__panel--after {
+	background: rgba(61, 213, 243, 0.12);
+}
+
+.xprospect-before-after__panel span {
+	display: inline-flex;
+	margin-bottom: var(--wp--preset--spacing--16);
+	color: var(--xprospect-color-primary-light);
+	font-weight: 800;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.xprospect-before-after__panel p {
+	color: var(--xprospect-color-dark);
+	font-size: var(--wp--preset--font-size--large);
+	font-weight: 800;
+	line-height: 1.65;
+}
+
+.xprospect-split {
+	display: grid;
+	gap: var(--wp--preset--spacing--32);
+}
+
+.xprospect-check-list {
+	display: grid;
+	gap: var(--wp--preset--spacing--16);
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.xprospect-check-list li {
+	position: relative;
+	padding: var(--wp--preset--spacing--24) var(--wp--preset--spacing--24) var(--wp--preset--spacing--24) var(--wp--preset--spacing--64);
+	border: 1px solid rgba(16, 24, 40, 0.08);
+	border-radius: var(--xprospect-radius-card);
+	background: var(--xprospect-color-background);
+	color: var(--xprospect-color-dark);
+	font-weight: 800;
+	line-height: 1.65;
+}
+
+.xprospect-check-list li::before {
+	position: absolute;
+	top: var(--wp--preset--spacing--24);
+	left: var(--wp--preset--spacing--24);
+	display: grid;
+	place-items: center;
+	width: 28px;
+	height: 28px;
+	border-radius: 999px;
+	background: var(--xprospect-color-accent);
+	color: var(--xprospect-color-primary);
+	font-size: 0.85rem;
+	font-weight: 900;
+	content: "✓";
+}
+
+.xprospect-kpi-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: var(--wp--preset--spacing--16);
+}
+
+.xprospect-kpi {
+	min-height: 160px;
+	padding: var(--wp--preset--spacing--24);
+	border-radius: var(--xprospect-radius-card);
+	background: var(--xprospect-color-primary);
+	color: var(--xprospect-color-background);
+}
+
+.xprospect-kpi strong,
+.xprospect-kpi span {
+	display: block;
+}
+
+.xprospect-kpi strong {
+	font-size: clamp(1.8rem, 8vw, 3.25rem);
+	font-weight: 800;
+	line-height: 1;
+}
+
+.xprospect-kpi span {
+	margin-top: var(--wp--preset--spacing--12);
+	color: rgba(255, 255, 255, 0.78);
+	font-weight: 700;
+	line-height: 1.45;
+}
+
+.xprospect-keyword-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--wp--preset--spacing--12);
+	margin-top: var(--wp--preset--spacing--32);
+}
+
+.xprospect-keyword-list span {
+	display: inline-flex;
+	align-items: center;
+	min-height: 48px;
+	padding: 0 var(--wp--preset--spacing--20, 20px);
+	border: 1px solid rgba(255, 255, 255, 0.16);
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.1);
+	color: var(--xprospect-color-background);
+	font-weight: 800;
+}
+
+.xprospect-process-list {
+	display: grid;
+	gap: var(--wp--preset--spacing--16);
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.xprospect-process-list li {
+	display: flex;
+	align-items: center;
+	gap: var(--wp--preset--spacing--16);
+	padding: var(--wp--preset--spacing--20, 20px);
+	border: 1px solid rgba(16, 24, 40, 0.08);
+	border-radius: var(--xprospect-radius-button);
+	background: var(--xprospect-color-background);
+	box-shadow: 0 8px 26px rgba(16, 24, 40, 0.05);
+	color: var(--xprospect-color-dark);
+	font-weight: 800;
+}
+
+.xprospect-process-list span {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	width: 42px;
+	height: 42px;
+	border-radius: 14px;
+	background: var(--xprospect-color-section);
+	color: var(--xprospect-color-primary-light);
+	font-size: 0.82rem;
+	font-weight: 900;
+}
+
+.xprospect-contact-cta {
+	display: grid;
+	justify-items: start;
+	gap: var(--wp--preset--spacing--32);
+	padding: var(--wp--preset--spacing--32);
+	border-radius: var(--xprospect-radius-card);
+	background:
+		radial-gradient(circle at 88% 18%, rgba(61, 213, 243, 0.24), transparent 24%),
+		var(--xprospect-color-primary);
+	color: var(--xprospect-color-background);
+	box-shadow: var(--wp--preset--shadow--medium);
+}
+
+.xprospect-contact-cta h2 {
+	max-width: 900px;
+	margin: 0;
+	color: var(--xprospect-color-background);
+	font-size: clamp(2rem, 7vw, 4rem);
+	font-weight: 800;
+	letter-spacing: 0;
+	line-height: 1.3;
 }
 
 @keyframes xprospect-spin {
@@ -577,6 +885,44 @@ summary:focus-visible,
 	.xprospect-hero__inner {
 		width: min(100% - 64px, var(--xprospect-container));
 	}
+
+	.xprospect-top-section {
+		padding-block: var(--wp--preset--spacing--96);
+	}
+
+	.xprospect-top-section__inner {
+		width: min(100% - 64px, var(--xprospect-container));
+	}
+
+	.xprospect-section-heading {
+		margin-bottom: var(--wp--preset--spacing--48);
+	}
+
+	.xprospect-card-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: var(--wp--preset--spacing--24);
+	}
+
+	.xprospect-before-after {
+		grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+	}
+
+	.xprospect-before-after__summary {
+		grid-row: span 2;
+	}
+
+	.xprospect-kpi-grid {
+		gap: var(--wp--preset--spacing--24);
+	}
+
+	.xprospect-process-list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: var(--wp--preset--spacing--24);
+	}
+
+	.xprospect-contact-cta {
+		padding: var(--wp--preset--spacing--64);
+	}
 }
 
 @media (min-width: 1024px) {
@@ -621,6 +967,50 @@ summary:focus-visible,
 
 	.xprospect-hero__visual {
 		min-height: 620px;
+	}
+
+	.xprospect-card-grid--three {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.xprospect-card-grid--four {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.xprospect-card-grid--problems {
+		grid-template-columns: repeat(6, minmax(0, 1fr));
+	}
+
+	.xprospect-card-grid--problems .xprospect-top-card {
+		grid-column: span 2;
+	}
+
+	.xprospect-card-grid--problems .xprospect-top-card:nth-child(4),
+	.xprospect-card-grid--problems .xprospect-top-card:nth-child(5) {
+		grid-column: span 3;
+	}
+
+	.xprospect-before-after {
+		grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr) minmax(0, 1fr);
+	}
+
+	.xprospect-before-after__summary {
+		grid-row: auto;
+	}
+
+	.xprospect-split {
+		grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+		align-items: start;
+		gap: var(--wp--preset--spacing--48);
+	}
+
+	.xprospect-process-list {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.xprospect-contact-cta {
+		grid-template-columns: minmax(0, 1fr) auto;
+		align-items: center;
 	}
 }
 

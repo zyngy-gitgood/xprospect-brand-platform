@@ -67,6 +67,19 @@ The theme contains only reusable architecture for Sprint 1:
 - Footer with company name, slogan, navigation, contact/privacy links, and copyright
 - `templates/front-page.html` with section-title placeholders only
 
+## Sprint 3 TOP Page Core Sections
+
+- Problems
+- Services
+- Before / After
+- Why X-PROSPECT
+- Technology
+- Process
+- Case Studies
+- Contact CTA
+
+The TOP page still uses polished placeholders instead of final images.
+
 ## Development Notes
 
 - Do not use Elementor.
