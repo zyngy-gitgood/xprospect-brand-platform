@@ -109,6 +109,12 @@ The TOP page still uses polished placeholders instead of final images.
 - Contact page category checkboxes added
 - Business-oriented copy hierarchy improved across key pages
 
+## Sprint 9 Theme Packaging
+
+- Theme assets made package-local for WordPress installation
+- Installable ZIP output prepared at `dist/xprospect-brand.zip`
+- WordPress install guide and staging test checklist added
+
 ## Development Notes
 
 - Do not use Elementor.

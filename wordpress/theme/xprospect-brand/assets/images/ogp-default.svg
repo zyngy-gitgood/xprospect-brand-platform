@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">X-PROSPECT OGP Image Placeholder</title>
+  <desc id="desc">Brand OGP placeholder with X-PROSPECT logo and slogan.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101828"/>
+      <stop offset=".55" stop-color="#133A63"/>
+      <stop offset="1" stop-color="#2F80ED"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 180) rotate(130) scale(430 320)">
+      <stop offset="0" stop-color="#3DD5F3" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#3DD5F3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mark" x1="118" y1="148" x2="282" y2="332" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#133A63"/>
+      <stop offset=".55" stop-color="#2F80ED"/>
+      <stop offset="1" stop-color="#3DD5F3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <path fill="url(#mark)" d="M200 110 303 170v120L200 350 97 290V170l103-60Z"/>
+  <path fill="#fff" fill-opacity=".14" d="M200 136 279 182v96l-79 46-79-46v-96l79-46Z"/>
+  <path fill="#fff" d="M145 176h33l22 29 22-29h32l-37 50 39 55h-33l-23-33-24 33h-32l39-55-38-50Z"/>
+  <text x="345" y="220" fill="#fff" font-family="Manrope, Inter, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="4">X-PROSPECT</text>
+  <text x="345" y="296" fill="#3DD5F3" font-family="'Noto Sans JP', Manrope, Arial, sans-serif" font-size="34" font-weight="800">AIを、現場で使える力に。</text>
+  <text x="345" y="370" fill="#fff" fill-opacity=".78" font-family="'Noto Sans JP', Manrope, Arial, sans-serif" font-size="24" font-weight="600">AI導入・DX支援・システム開発</text>
+</svg>

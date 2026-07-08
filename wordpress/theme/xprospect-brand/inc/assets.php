@@ -41,7 +41,7 @@ add_action(
 	static function (): void {
 		printf(
 			'<link rel="icon" href="%s" type="image/svg+xml">' . "\n",
-			esc_url(home_url('/assets/logo/favicon.svg'))
+			esc_url(get_template_directory_uri() . '/assets/logo/favicon.svg')
 		);
 	}
 );

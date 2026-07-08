@@ -80,7 +80,7 @@ add_action(
 	static function (): void {
 		$meta        = xprospect_brand_get_seo_meta();
 		$canonical   = is_singular() ? get_permalink() : home_url('/');
-		$ogp_image   = home_url('/assets/images/ogp-default.svg');
+		$ogp_image   = get_template_directory_uri() . '/assets/images/ogp-default.svg';
 		$site_name   = get_bloginfo('name') ?: 'X-PROSPECT';
 		$description = $meta['description'];
 		$title       = $meta['title'];
