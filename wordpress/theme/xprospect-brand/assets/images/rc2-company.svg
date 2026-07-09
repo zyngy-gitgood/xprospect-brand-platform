@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-label="Modern company office illustration">
+  <rect width="1200" height="820" rx="48" fill="#edf9ff"/>
+  <rect x="110" y="140" width="980" height="560" rx="42" fill="#fff"/>
+  <rect x="180" y="230" width="360" height="260" rx="26" fill="#f7f9fc"/>
+  <rect x="620" y="230" width="350" height="260" rx="26" fill="#f7f9fc"/>
+  <circle cx="320" cy="360" r="72" fill="#2F80ED" opacity=".22"/>
+  <circle cx="780" cy="360" r="72" fill="#3DD5F3" opacity=".28"/>
+  <path d="M235 560h720" stroke="#133A63" stroke-opacity=".16" stroke-width="18" stroke-linecap="round"/>
+  <text x="240" y="625" fill="#101828" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">Mission / Vision / Execution</text>
+</svg>

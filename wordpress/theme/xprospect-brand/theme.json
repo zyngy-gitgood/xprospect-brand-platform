@@ -276,6 +276,20 @@
       ]
     },
     {
+      "name": "page-patent",
+      "title": "特許技術",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
+      "name": "page-cases",
+      "title": "導入事例",
+      "postTypes": [
+        "page"
+      ]
+    },
+    {
       "name": "page-recruit",
       "title": "採用情報",
       "postTypes": [

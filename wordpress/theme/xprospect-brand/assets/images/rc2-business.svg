@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-label="Business improvement dashboard illustration">
+  <rect width="1200" height="820" rx="48" fill="#ffffff"/>
+  <rect x="110" y="120" width="980" height="580" rx="44" fill="#f7f9fc"/>
+  <rect x="190" y="210" width="820" height="400" rx="30" fill="#fff"/>
+  <path d="M260 530 420 420l150 70 240-210 130 80" fill="none" stroke="#2F80ED" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#133A63"><circle cx="260" cy="530" r="14"/><circle cx="420" cy="420" r="14"/><circle cx="570" cy="490" r="14"/><circle cx="810" cy="280" r="14"/><circle cx="940" cy="360" r="14"/></g>
+</svg>

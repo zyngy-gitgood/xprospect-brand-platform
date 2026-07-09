@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-label="Patent measurement technology illustration">
+  <rect width="1200" height="820" rx="48" fill="#f7f9fc"/>
+  <rect x="150" y="150" width="900" height="520" rx="42" fill="#fff"/>
+  <path d="M310 520h460V300H310v220Z" fill="#eaf8ff" stroke="#133A63" stroke-opacity=".24" stroke-width="4"/>
+  <path d="M310 300l120-90h460l-120 90H310Zm460 220 120-90V210" fill="none" stroke="#2F80ED" stroke-opacity=".55" stroke-width="4"/>
+  <path d="M260 565h590M280 250v320M860 210v360" stroke="#3DD5F3" stroke-width="8" stroke-linecap="round"/>
+  <text x="220" y="112" fill="#133A63" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="900">Patent No. 7288568</text>
+</svg>

@@ -16,28 +16,39 @@
 
 	<section class="xprospect-content-section" aria-labelledby="contact-intro-title">
 		<div class="xprospect-content-section__inner">
-			<div class="xprospect-section-heading">
-				<p class="xprospect-section-heading__eyebrow">Contact</p>
-				<h2 id="contact-intro-title">まずは課題をお聞かせください。</h2>
-				<p>具体的な要件が決まっていなくても構いません。現在の業務内容や課題を伺い、AI活用の可能性と進め方を一緒に整理します。</p>
+			<div class="xprospect-rc2-split">
+				<div class="xprospect-section-heading">
+					<p class="xprospect-section-heading__eyebrow">Consultation</p>
+					<h2 id="contact-intro-title">まずは、AIで何ができるかを整理しませんか？</h2>
+					<p>具体的な要件が決まっていなくても構いません。現在の業務内容や課題を伺い、AI活用の可能性と進め方を一緒に整理します。</p>
+				</div>
+				<img class="xprospect-rc2-media" src="./wp-content/themes/xprospect-brand/assets/images/rc2-meeting.svg" alt="AI導入相談の打ち合わせを表す図">
 			</div>
 		</div>
 	</section>
 
-	<section class="xprospect-consultation-block" aria-labelledby="contact-consultation-title">
-		<div class="xprospect-consultation-block__inner">
-			<div>
-				<p class="xprospect-section-heading__eyebrow">Consultation</p>
-				<h2 id="contact-consultation-title">まずは、AIで何ができるかを整理しませんか？</h2>
-				<p>具体的な要件が決まっていなくても構いません。現在の業務内容や課題を伺い、AI活用の可能性を一緒に整理します。</p>
+	<section class="xprospect-content-section xprospect-content-section--muted" aria-labelledby="contact-examples-title">
+		<div class="xprospect-content-section__inner">
+			<div class="xprospect-section-heading">
+				<p class="xprospect-section-heading__eyebrow">Examples</p>
+				<h2 id="contact-examples-title">このようなご相談に対応します</h2>
 			</div>
-			<a class="xprospect-button xprospect-button--primary" href="#contact-form-title">無料相談する</a>
+			<div class="xprospect-content-grid xprospect-content-grid--four">
+				<article class="xprospect-content-card"><h3>AI導入について相談したい</h3><p>現場課題の整理から、優先すべき導入テーマを一緒に検討します。</p></article>
+				<article class="xprospect-content-card"><h3>自社業務にAIを使えるか知りたい</h3><p>既存の業務フローやデータを確認し、活用可能性を整理します。</p></article>
+				<article class="xprospect-content-card"><h3>システム開発を相談したい</h3><p>Webシステム、業務システム、クラウド基盤までご相談いただけます。</p></article>
+				<article class="xprospect-content-card"><h3>技術者・開発体制について相談したい</h3><p>開発体制やプロジェクト推進方法についてヒアリングします。</p></article>
+			</div>
 		</div>
 	</section>
 
 	<section class="xprospect-page-content-placeholder" aria-labelledby="contact-form-title">
 		<div class="xprospect-page-content-placeholder__inner">
-			<h2 id="contact-form-title">Contact form placeholder</h2>
+			<div class="xprospect-section-heading">
+				<p class="xprospect-section-heading__eyebrow">Form</p>
+				<h2 id="contact-form-title">お問い合わせフォーム</h2>
+				<p>現在はフォーム表示のプレースホルダーです。送信処理は正式公開時に接続します。</p>
+			</div>
 			<form class="xprospect-contact-form" aria-label="お問い合わせフォーム">
 				<fieldset class="xprospect-contact-form__wide xprospect-contact-categories">
 					<legend>ご相談カテゴリ</legend>
@@ -48,52 +59,16 @@
 					<label><input type="checkbox" name="category[]" value="recruit"> <span>採用について</span></label>
 					<label><input type="checkbox" name="category[]" value="other"> <span>その他</span></label>
 				</fieldset>
-				<label>
-					<span>お名前</span>
-					<input type="text" name="your-name" autocomplete="name">
-				</label>
-				<label>
-					<span>会社名</span>
-					<input type="text" name="company" autocomplete="organization">
-				</label>
-				<label>
-					<span>メールアドレス</span>
-					<input type="email" name="email" autocomplete="email">
-				</label>
-				<label>
-					<span>電話番号</span>
-					<input type="tel" name="tel" autocomplete="tel">
-				</label>
-				<label class="xprospect-contact-form__wide">
-					<span>ご相談内容</span>
-					<textarea name="message" rows="7"></textarea>
-				</label>
+				<label>お名前<input type="text" name="name" autocomplete="name" placeholder="山田 太郎"></label>
+				<label>会社名<input type="text" name="company" autocomplete="organization" placeholder="株式会社サンプル"></label>
+				<label>メールアドレス<input type="email" name="email" autocomplete="email" placeholder="example@company.jp"></label>
+				<label>電話番号<input type="tel" name="tel" autocomplete="tel" placeholder="052-000-0000"></label>
+				<label class="xprospect-contact-form__wide">ご相談内容<textarea name="message" rows="7" placeholder="現在の課題や相談したい内容をご記入ください。"></textarea></label>
+				<div class="xprospect-contact-form__wide xprospect-privacy-note">
+					<p>入力内容はお問い合わせ対応のために利用します。プライバシーポリシーの正式文面は公開前に掲載予定です。</p>
+				</div>
 				<button class="xprospect-button xprospect-button--primary" type="button">送信する</button>
 			</form>
-		</div>
-	</section>
-
-	<section class="xprospect-content-section xprospect-content-section--muted" aria-labelledby="consultation-title">
-		<div class="xprospect-content-section__inner">
-			<div class="xprospect-section-heading">
-				<p class="xprospect-section-heading__eyebrow">Examples</p>
-				<h2 id="consultation-title">ご相談例</h2>
-			</div>
-			<div class="xprospect-content-grid xprospect-content-grid--four">
-				<article class="xprospect-content-card"><h3>AI導入について相談したい</h3></article>
-				<article class="xprospect-content-card"><h3>自社業務にAIを使えるか知りたい</h3></article>
-				<article class="xprospect-content-card"><h3>システム開発を相談したい</h3></article>
-				<article class="xprospect-content-card"><h3>技術者・開発体制について相談したい</h3></article>
-			</div>
-		</div>
-	</section>
-
-	<section class="xprospect-content-section" aria-labelledby="privacy-title">
-		<div class="xprospect-content-section__inner">
-			<div class="xprospect-notice-box">
-				<h2 id="privacy-title">Privacy notice placeholder</h2>
-				<p>送信内容の取り扱いに関する詳細は、今後プライバシーポリシーとして整備します。</p>
-			</div>
 		</div>
 	</section>
 </main>

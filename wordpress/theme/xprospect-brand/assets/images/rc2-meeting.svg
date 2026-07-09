@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-label="Business meeting illustration">
+  <rect width="1200" height="820" rx="48" fill="#f7f9fc"/>
+  <rect x="120" y="140" width="960" height="540" rx="44" fill="#fff"/>
+  <rect x="210" y="230" width="780" height="230" rx="28" fill="#edf9ff"/>
+  <circle cx="330" cy="555" r="58" fill="#2F80ED" opacity=".32"/>
+  <circle cx="600" cy="555" r="58" fill="#133A63" opacity=".22"/>
+  <circle cx="870" cy="555" r="58" fill="#3DD5F3" opacity=".38"/>
+  <path d="M280 300h640M280 360h420" stroke="#133A63" stroke-opacity=".18" stroke-width="18" stroke-linecap="round"/>
+</svg>

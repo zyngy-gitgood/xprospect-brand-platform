@@ -39,6 +39,14 @@ function xprospect_brand_get_seo_meta(): array {
 			'title'       => '技術｜X-PROSPECT株式会社',
 			'description' => 'システム開発、クラウド、AI、3D点群、XR、特許技術を活用し、現場で使える仕組みを構築します。',
 		),
+		'patent'     => array(
+			'title'       => '特許技術｜X-PROSPECT株式会社',
+			'description' => '特許第7288568号を活用した3D点群計測、画像処理、Computer Vision、産業AIの技術価値をご紹介します。',
+		),
+		'cases'      => array(
+			'title'       => '導入事例｜X-PROSPECT株式会社',
+			'description' => 'メール業務AI、議事録AI、社内文書検索AIなど、中小企業の業務改善につながるAI活用モデルケースをご紹介します。',
+		),
 		'recruit'    => array(
 			'title'       => '採用情報｜X-PROSPECT株式会社',
 			'description' => 'AI時代に現場で価値を出せるエンジニアを募集しています。',

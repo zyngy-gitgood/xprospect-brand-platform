@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-label="AI case study workflow illustration">
+  <rect width="1200" height="820" rx="48" fill="#ffffff"/>
+  <rect x="90" y="110" width="1020" height="600" rx="44" fill="#f7f9fc"/>
+  <g fill="#fff" stroke="#2F80ED" stroke-opacity=".18" stroke-width="2">
+    <rect x="150" y="260" width="220" height="130" rx="24"/><rect x="490" y="260" width="220" height="130" rx="24"/><rect x="830" y="260" width="220" height="130" rx="24"/>
+    <rect x="490" y="500" width="220" height="130" rx="24"/>
+  </g>
+  <path d="M370 325h120M710 325h120M600 390v110" stroke="#133A63" stroke-opacity=".28" stroke-width="10" stroke-linecap="round"/>
+  <g fill="#101828" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">
+    <text x="205" y="336">Input</text><text x="552" y="336">AI</text><text x="885" y="336">Action</text><text x="545" y="576">Result</text>
+  </g>
+</svg>

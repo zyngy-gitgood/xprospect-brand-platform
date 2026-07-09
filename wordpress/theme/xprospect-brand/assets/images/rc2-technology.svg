@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-label="Technology architecture illustration">
+  <rect width="1200" height="820" rx="48" fill="#f7f9fc"/>
+  <g fill="none" stroke="#2F80ED" stroke-width="2" opacity=".28">
+    <path d="M200 590 600 210l400 380Z"/>
+    <path d="M300 530h600M400 450h400M500 370h200"/>
+  </g>
+  <g fill="#133A63">
+    <circle cx="200" cy="590" r="14"/><circle cx="600" cy="210" r="14"/><circle cx="1000" cy="590" r="14"/>
+    <circle cx="400" cy="450" r="10"/><circle cx="800" cy="450" r="10"/><circle cx="600" cy="370" r="10"/>
+  </g>
+  <rect x="130" y="100" width="290" height="120" rx="24" fill="#fff"/>
+  <rect x="780" y="100" width="290" height="120" rx="24" fill="#fff"/>
+  <rect x="455" y="610" width="290" height="120" rx="24" fill="#fff"/>
+  <text x="175" y="172" fill="#101828" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">3D Point Cloud</text>
+  <text x="840" y="172" fill="#101828" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Computer Vision</text>
+  <text x="525" y="682" fill="#101828" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Industrial AI</text>
+</svg>
