@@ -1,1 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc"><title id="title">導入モデルケース</title><desc id="desc">複数の業務フローがAIに集約されるモデルケース図</desc><rect width="760" height="520" rx="36" fill="#F7F9FC"/><g fill="#fff" stroke="#DCE8F5" stroke-width="2"><rect x="78" y="104" width="184" height="82" rx="22"/><rect x="78" y="224" width="184" height="82" rx="22"/><rect x="78" y="344" width="184" height="82" rx="22"/><rect x="498" y="164" width="184" height="82" rx="22"/><rect x="498" y="284" width="184" height="82" rx="22"/></g><circle cx="380" cy="260" r="78" fill="#133A63"/><text x="380" y="270" text-anchor="middle" font-family="Manrope,sans-serif" font-size="34" font-weight="900" fill="#fff">AI</text><g stroke="#2F80ED" stroke-width="3" stroke-linecap="round" fill="none"><path d="M262 145 315 224"/><path d="M262 265h40"/><path d="M262 385 315 296"/><path d="M458 236 498 205"/><path d="M458 284 498 325"/></g><g font-family="'Noto Sans JP',sans-serif" font-size="16" font-weight="800" fill="#133A63"><text x="170" y="152" text-anchor="middle">メール</text><text x="170" y="272" text-anchor="middle">会議</text><text x="170" y="392" text-anchor="middle">社内文書</text><text x="590" y="212" text-anchor="middle">回答案</text><text x="590" y="332" text-anchor="middle">改善提案</text></g></svg>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="cases-title cases-desc">
+  <title id="cases-title">Cases</title>
+  <desc id="cases-desc">X-PROSPECT premium vector illustration</desc>
+  <defs>
+    <linearGradient id="cases-blue" x1="96" y1="70" x2="660" y2="456" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B2D57"/>
+      <stop offset=".58" stop-color="#1F6FE5"/>
+      <stop offset="1" stop-color="#34D4F4"/>
+    </linearGradient>
+    <linearGradient id="cases-surface" x1="80" y1="48" x2="680" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F5F9FF"/>
+    </linearGradient>
+    <filter id="cases-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#0B2D57" flood-opacity=".12"/>
+    </filter>
+    <filter id="cases-soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0B2D57" flood-opacity=".08"/>
+    </filter>
+    <pattern id="cases-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#D7E5F5" stroke-width="1" opacity=".55"/>
+    </pattern>
+  </defs>
+  <rect width="760" height="520" rx="40" fill="#F7FAFE"/>
+  <circle cx="620" cy="120" r="106" fill="#78E0F2" opacity=".16"/>
+  <circle cx="130" cy="430" r="150" fill="#2F80ED" opacity=".06"/>
+  <rect x="44" y="40" width="672" height="440" rx="36" fill="url(#cases-surface)" stroke="#DDE8F5"/>
+  <rect x="76" y="72" width="608" height="376" rx="28" fill="url(#cases-grid)" opacity=".45"/>
+
+  <g filter="url(#cases-shadow)">
+    <circle cx="380" cy="260" r="72" fill="url(#cases-blue)"/><text x="380" y="270" text-anchor="middle" font-family="Manrope, Inter, sans-serif" font-size="32" font-weight="900" fill="#fff">AI</text>
+    <rect x="100" y="120" width="180" height="66" rx="18" fill="#FFFFFF" stroke="#DDE8F5" filter="url(#cases-soft)"/><text x="158" y="160" font-family="Noto Sans JP, Manrope, sans-serif" font-size="15" font-weight="800" fill="#0F172A">メール</text>
+    <rect x="100" y="226" width="180" height="66" rx="18" fill="#FFFFFF" stroke="#DDE8F5" filter="url(#cases-soft)"/><text x="164" y="266" font-family="Noto Sans JP, Manrope, sans-serif" font-size="15" font-weight="800" fill="#0F172A">会議</text>
+    <rect x="100" y="332" width="180" height="66" rx="18" fill="#FFFFFF" stroke="#DDE8F5" filter="url(#cases-soft)"/><text x="150" y="372" font-family="Noto Sans JP, Manrope, sans-serif" font-size="15" font-weight="800" fill="#0F172A">社内文書</text>
+    <rect x="480" y="172" width="180" height="66" rx="18" fill="#FFFFFF" stroke="#DDE8F5" filter="url(#cases-soft)"/><text x="538" y="212" font-family="Noto Sans JP, Manrope, sans-serif" font-size="15" font-weight="800" fill="#0F172A">回答案</text>
+    <rect x="480" y="286" width="180" height="66" rx="18" fill="#FFFFFF" stroke="#DDE8F5" filter="url(#cases-soft)"/><text x="530" y="326" font-family="Noto Sans JP, Manrope, sans-serif" font-size="15" font-weight="800" fill="#0F172A">改善提案</text>
+    <path d="M280 153L322 226" stroke="#2F80ED" stroke-width="3" stroke-linecap="round"/><path d="M280 259L308 259" stroke="#2F80ED" stroke-width="3" stroke-linecap="round"/><path d="M280 365L322 294" stroke="#2F80ED" stroke-width="3" stroke-linecap="round"/><path d="M452 236L480 205" stroke="#2F80ED" stroke-width="3" stroke-linecap="round"/><path d="M452 284L480 319" stroke="#2F80ED" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+</svg>

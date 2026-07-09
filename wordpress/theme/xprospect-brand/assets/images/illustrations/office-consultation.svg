@@ -1,1 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc"><title id="title">オフィス相談</title><desc id="desc">オフィスでAI導入相談を行うイラスト</desc><rect width="760" height="520" rx="36" fill="#F7F9FC"/><rect x="126" y="114" width="508" height="292" rx="34" fill="#fff" stroke="#DCE8F5" stroke-width="2"/><rect x="284" y="164" width="192" height="84" rx="24" fill="#133A63"/><text x="380" y="216" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="22" font-weight="900" fill="#fff">相談</text><circle cx="248" cy="292" r="32" fill="#133A63"/><circle cx="512" cy="292" r="32" fill="#133A63"/><path d="M190 382c10-58 106-58 116 0m148 0c10-58 106-58 116 0" fill="#2F80ED"/><path d="M312 302h136" stroke="#3DD5F3" stroke-width="6" stroke-linecap="round"/></svg>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="office-consultation-title office-consultation-desc">
+  <title id="office-consultation-title">Office Consultation</title>
+  <desc id="office-consultation-desc">X-PROSPECT premium vector illustration</desc>
+  <defs>
+    <linearGradient id="office-consultation-blue" x1="96" y1="70" x2="660" y2="456" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B2D57"/>
+      <stop offset=".58" stop-color="#1F6FE5"/>
+      <stop offset="1" stop-color="#34D4F4"/>
+    </linearGradient>
+    <linearGradient id="office-consultation-surface" x1="80" y1="48" x2="680" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F5F9FF"/>
+    </linearGradient>
+    <filter id="office-consultation-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#0B2D57" flood-opacity=".12"/>
+    </filter>
+    <filter id="office-consultation-soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0B2D57" flood-opacity=".08"/>
+    </filter>
+    <pattern id="office-consultation-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#D7E5F5" stroke-width="1" opacity=".55"/>
+    </pattern>
+  </defs>
+  <rect width="760" height="520" rx="40" fill="#F7FAFE"/>
+  <circle cx="620" cy="120" r="106" fill="#78E0F2" opacity=".16"/>
+  <circle cx="130" cy="430" r="150" fill="#2F80ED" opacity=".06"/>
+  <rect x="44" y="40" width="672" height="440" rx="36" fill="url(#office-consultation-surface)" stroke="#DDE8F5"/>
+  <rect x="76" y="72" width="608" height="376" rx="28" fill="url(#office-consultation-grid)" opacity=".45"/>
+
+  <g filter="url(#office-consultation-shadow)">
+    <rect x="108" y="112" width="250" height="292" rx="28" fill="#FFFFFF" stroke="#DDE8F5" filter="url(#office-consultation-soft)"/>
+    <text x="142" y="160" font-family="Noto Sans JP, Manrope, sans-serif" font-size="22" font-weight="800" fill="#0F172A">相談内容</text><rect x="142" y="202" width="164" height="12" rx="6" fill="#CFE0F5"/><rect x="142" y="234" width="126" height="12" rx="6" fill="#E4ECF7"/><rect x="142" y="266" width="188" height="12" rx="6" fill="#E4ECF7"/>
+    <rect x="418" y="152" width="220" height="196" rx="28" fill="#FFFFFF" stroke="#DDE8F5" filter="url(#office-consultation-soft)"/>
+    <path d="M462 286c34-74 98-74 132 0" fill="none" stroke="#2F80ED" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="462" cy="286" r="13" fill="#34D4F4"/><circle cx="594" cy="286" r="13" fill="#0B2D57"/>
+    <text x="528" y="228" text-anchor="middle" font-family="Manrope, Inter, sans-serif" font-size="34" font-weight="900" fill="#0B2D57">AI</text>
+    <text x="456" y="324" font-family="Noto Sans JP, Manrope, sans-serif" font-size="16" font-weight="800" fill="#0F172A">活用可能性を整理</text>
+  </g>
+
+</svg>

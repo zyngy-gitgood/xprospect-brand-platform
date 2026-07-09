@@ -40,8 +40,8 @@ add_action(
 	'wp_head',
 	static function (): void {
 		printf(
-			'<link rel="icon" href="%s" type="image/svg+xml">' . "\n",
-			esc_url(get_template_directory_uri() . '/assets/logo/favicon.svg')
+			'<link rel="icon" href="%s" type="image/png">' . "\n",
+			esc_url(get_template_directory_uri() . '/assets/logo/company-logo.png')
 		);
 	}
 );
