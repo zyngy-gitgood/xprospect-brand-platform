@@ -16,6 +16,8 @@
 		'.xprospect-flow',
 		'.xprospect-contact-cta',
 		'.xprospect-consultation-block__inner',
+		'.motion-card',
+		'.motion-reveal',
 	].join(','));
 	const countItems = document.querySelectorAll('[data-xprospect-count]');
 
