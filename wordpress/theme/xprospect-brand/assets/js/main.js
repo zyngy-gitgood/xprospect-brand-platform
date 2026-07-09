@@ -79,6 +79,7 @@
 			});
 		}, { rootMargin: '0px 0px -12% 0px', threshold: 0.12 });
 
+		document.documentElement.classList.add('xprospect-motion-ready');
 		motionTargets.forEach((item) => revealObserver.observe(item));
 	} else {
 		motionTargets.forEach((item) => item.classList.add('is-visible'));

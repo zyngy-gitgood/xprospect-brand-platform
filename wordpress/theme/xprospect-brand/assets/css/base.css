@@ -1382,13 +1382,13 @@ summary:focus-visible,
 	accent-color: var(--xprospect-color-primary-light);
 }
 
-.xprospect-js .xprospect-reveal {
+.xprospect-motion-ready .xprospect-reveal {
 	opacity: 0;
 	transform: translateY(28px);
 	transition: opacity 520ms ease, transform 520ms ease;
 }
 
-.xprospect-js .xprospect-reveal.is-visible {
+.xprospect-motion-ready .xprospect-reveal.is-visible {
 	opacity: 1;
 	transform: translateY(0);
 }
@@ -2185,14 +2185,14 @@ summary:focus-visible,
 	transform: translateX(3px);
 }
 
-.xprospect-reveal {
+.xprospect-motion-ready .xprospect-reveal {
 	opacity: 0;
 	transform: translateY(22px);
 	transition: opacity 620ms ease, transform 620ms ease;
 	transition-delay: var(--xprospect-reveal-delay, 0ms);
 }
 
-.xprospect-reveal.is-visible {
+.xprospect-motion-ready .xprospect-reveal.is-visible {
 	opacity: 1;
 	transform: translateY(0);
 }
@@ -2363,7 +2363,7 @@ summary:focus-visible,
 		transition: none;
 	}
 
-	.xprospect-reveal {
+	.xprospect-motion-ready .xprospect-reveal {
 		opacity: 1;
 		transform: none;
 	}
@@ -2639,5 +2639,270 @@ summary:focus-visible,
 	.motion-float,
 	.motion-glow::before {
 		animation: none;
+	}
+}
+
+/* Sprint 13 premium brand identity layer. */
+.xprospect-brand-signature {
+	position: relative;
+	padding-block: 64px;
+	background:
+		radial-gradient(circle at 12% 20%, rgba(61, 213, 243, 0.12), transparent 30%),
+		linear-gradient(180deg, #fff, var(--xprospect-color-section));
+	overflow: clip;
+}
+
+.xprospect-human-visual {
+	width: min(100%, 560px);
+	border-radius: var(--xprospect-radius-image);
+	box-shadow: 0 26px 76px rgba(19, 58, 99, 0.12);
+}
+
+.xprospect-signature-flow {
+	display: grid;
+	gap: 14px;
+	padding: 0;
+	margin: 32px 0 0;
+	list-style: none;
+}
+
+.xprospect-signature-flow li {
+	position: relative;
+	display: grid;
+	gap: 8px;
+	padding: 20px;
+	border: 1px solid rgba(47, 128, 237, 0.12);
+	border-radius: 22px;
+	background: rgba(255, 255, 255, 0.92);
+	box-shadow: 0 16px 42px rgba(19, 58, 99, 0.08);
+	color: var(--xprospect-color-dark);
+	font-weight: 900;
+}
+
+.xprospect-signature-flow li span {
+	color: var(--xprospect-color-primary-light);
+	font-size: 0.78rem;
+	letter-spacing: 0.12em;
+}
+
+.xprospect-usecase-grid {
+	display: grid;
+	gap: 14px;
+}
+
+.xprospect-usecase-card {
+	position: relative;
+	display: grid;
+	align-content: space-between;
+	min-height: 138px;
+	padding: 20px;
+	overflow: hidden;
+	border: 1px solid rgba(16, 24, 40, 0.08);
+	border-radius: 22px;
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 249, 252, 0.92)),
+		radial-gradient(circle at 85% 16%, rgba(61, 213, 243, 0.18), transparent 34%);
+	box-shadow: 0 14px 42px rgba(19, 58, 99, 0.08);
+	transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.xprospect-usecase-card::after {
+	position: absolute;
+	right: -34px;
+	bottom: -34px;
+	width: 96px;
+	height: 96px;
+	border-radius: 999px;
+	background: rgba(47, 128, 237, 0.08);
+	content: "";
+}
+
+.xprospect-usecase-card:hover {
+	box-shadow: 0 24px 58px rgba(19, 58, 99, 0.12);
+	transform: translateY(-3px);
+}
+
+.xprospect-usecase-card span {
+	color: var(--xprospect-color-primary-light);
+	font-size: 0.78rem;
+	font-weight: 900;
+	letter-spacing: 0.14em;
+}
+
+.xprospect-usecase-card h3,
+.xprospect-usecase-card p {
+	position: relative;
+	z-index: 1;
+	margin: 0;
+}
+
+.xprospect-usecase-card h3 {
+	color: var(--xprospect-color-dark);
+	font-size: clamp(1.05rem, 1vw, 1.28rem);
+	line-height: 1.45;
+}
+
+.xprospect-usecase-card p {
+	margin-top: 12px;
+	color: rgba(16, 24, 40, 0.68);
+	line-height: 1.75;
+}
+
+.xprospect-usecase-card--featured,
+.xprospect-usecase-card--wide {
+	min-height: 188px;
+}
+
+.xprospect-usecase-card--gradient {
+	background: linear-gradient(135deg, rgba(47, 128, 237, 0.12), rgba(61, 213, 243, 0.24)), #fff;
+}
+
+.xprospect-usecase-card--dark {
+	border-color: rgba(255, 255, 255, 0.08);
+	background: linear-gradient(135deg, #0f3458, #133A63);
+}
+
+.xprospect-usecase-card--dark h3,
+.xprospect-usecase-card--dark span {
+	color: #fff;
+}
+
+.xprospect-trust-grid--identity {
+	grid-template-columns: 1fr;
+}
+
+.xprospect-trust-card--dark {
+	border-color: rgba(255, 255, 255, 0.1);
+	background: linear-gradient(135deg, #0f3458, #133A63);
+}
+
+.xprospect-trust-card--dark h3,
+.xprospect-trust-card--dark p {
+	color: #fff;
+}
+
+.xprospect-trust-card--dark span {
+	background: rgba(255, 255, 255, 0.14);
+	color: #fff;
+}
+
+.xprospect-trust-card--number span {
+	width: auto;
+	min-width: 76px;
+	padding-inline: 16px;
+	font-size: 1.15rem;
+}
+
+.xprospect-identity-card {
+	background:
+		radial-gradient(circle at 84% 12%, rgba(61, 213, 243, 0.2), transparent 34%),
+		linear-gradient(180deg, #fff, rgba(247, 249, 252, 0.92));
+}
+
+.xprospect-identity-card span {
+	display: inline-flex;
+	margin-bottom: 12px;
+	color: var(--xprospect-color-primary-light);
+	font-size: 0.78rem;
+	font-weight: 900;
+	letter-spacing: 0.14em;
+}
+
+.xprospect-identity-card--dark {
+	border-color: rgba(255, 255, 255, 0.08);
+	background: linear-gradient(135deg, #0f3458, #133A63);
+	color: #fff;
+}
+
+.xprospect-identity-card--dark h3,
+.xprospect-identity-card--dark p,
+.xprospect-identity-card--dark span {
+	color: #fff;
+}
+
+.xprospect-cta-b {
+	border: 1px solid rgba(47, 128, 237, 0.14);
+	background:
+		radial-gradient(circle at 84% 16%, rgba(61, 213, 243, 0.14), transparent 34%),
+		#fff;
+	color: var(--xprospect-color-dark);
+}
+
+.xprospect-cta-b h2,
+.xprospect-cta-b p {
+	color: var(--xprospect-color-dark);
+}
+
+.xprospect-cta-c {
+	background:
+		radial-gradient(circle at 88% 18%, rgba(61, 213, 243, 0.2), transparent 28%),
+		linear-gradient(135deg, #12395f, #1e65ad);
+}
+
+.xprospect-brand-thought .xprospect-rc2-split,
+.xprospect-content-section .xprospect-rc2-split {
+	align-items: center;
+}
+
+.xprospect-flow--premium {
+	overflow: visible;
+}
+
+.xprospect-flow--premium .xprospect-flow__items {
+	align-items: stretch;
+}
+
+.xprospect-flow--premium .xprospect-flow__item {
+	min-height: 72px;
+	white-space: normal;
+}
+
+@media (min-width: 768px) {
+	.xprospect-signature-flow {
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+	}
+
+	.xprospect-usecase-grid {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.xprospect-usecase-card--featured,
+	.xprospect-usecase-card--wide {
+		grid-column: span 2;
+	}
+
+	.xprospect-trust-grid--identity {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 1024px) {
+	.xprospect-hero--rc2 {
+		min-height: 680px;
+	}
+
+	.xprospect-brand-signature {
+		padding-block: 58px;
+	}
+
+	.xprospect-usecase-grid {
+		grid-template-columns: repeat(6, minmax(0, 1fr));
+	}
+
+	.xprospect-usecase-card--featured {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+
+	.xprospect-usecase-card--wide {
+		grid-column: span 2;
+	}
+
+	.xprospect-trust-grid--identity {
+		grid-template-columns: repeat(6, minmax(0, 1fr));
+	}
+
+	.xprospect-rc2-split {
+		gap: 42px;
 	}
 }
