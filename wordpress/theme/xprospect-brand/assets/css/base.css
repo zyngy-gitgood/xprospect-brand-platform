@@ -2151,3 +2151,220 @@ summary:focus-visible,
 		padding-block: 76px;
 	}
 }
+
+/* Sprint 11 brand polish layer. */
+.xprospect-button,
+.wp-block-button__link {
+	position: relative;
+	overflow: hidden;
+	transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.xprospect-button--outline {
+	border: 1px solid rgba(19, 58, 99, 0.28);
+	background: transparent;
+	color: var(--xprospect-color-primary);
+}
+
+.xprospect-button--inline {
+	min-height: auto;
+	padding: 0;
+	border-radius: 0;
+	background: transparent;
+	color: var(--xprospect-color-primary-light);
+	font-weight: 900;
+}
+
+.xprospect-button:hover,
+.wp-block-button__link:hover {
+	transform: translateY(-2px);
+}
+
+.xprospect-button--inline:hover {
+	box-shadow: none;
+	transform: translateX(3px);
+}
+
+.xprospect-reveal {
+	opacity: 0;
+	transform: translateY(22px);
+	transition: opacity 620ms ease, transform 620ms ease;
+	transition-delay: var(--xprospect-reveal-delay, 0ms);
+}
+
+.xprospect-reveal.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.xprospect-reveal-delay-1 {
+	transition-delay: 55ms;
+}
+
+.xprospect-reveal-delay-2 {
+	transition-delay: 110ms;
+}
+
+.xprospect-reveal-delay-3 {
+	transition-delay: 165ms;
+}
+
+.xprospect-reveal-delay-4 {
+	transition-delay: 220ms;
+}
+
+.xprospect-reveal-delay-5 {
+	transition-delay: 275ms;
+}
+
+.xprospect-trust-grid,
+.xprospect-stack-grid,
+.xprospect-s11-media-grid {
+	display: grid;
+	gap: var(--wp--preset--spacing--16);
+}
+
+.xprospect-trust-card,
+.xprospect-stack-item {
+	border: 1px solid rgba(16, 24, 40, 0.08);
+	background: rgba(255, 255, 255, 0.92);
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+
+.xprospect-trust-card {
+	display: grid;
+	gap: 12px;
+	padding: var(--wp--preset--spacing--24);
+	border-radius: var(--xprospect-radius-card);
+}
+
+.xprospect-trust-card h3,
+.xprospect-trust-card p {
+	margin: 0;
+}
+
+.xprospect-trust-card span {
+	display: inline-grid;
+	place-items: center;
+	width: 52px;
+	height: 52px;
+	border-radius: 18px;
+	background: linear-gradient(135deg, rgba(47, 128, 237, 0.14), rgba(61, 213, 243, 0.22));
+	color: var(--xprospect-color-primary);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 900;
+}
+
+.xprospect-trust-card h3 {
+	color: var(--xprospect-color-dark);
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1.45;
+}
+
+.xprospect-trust-card p {
+	color: rgba(16, 24, 40, 0.68);
+	line-height: 1.75;
+}
+
+.xprospect-stack-item {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 48px;
+	padding: 12px 14px;
+	border-radius: 999px;
+	color: var(--xprospect-color-primary);
+	font-size: var(--wp--preset--font-size--small);
+	font-weight: 900;
+	text-align: center;
+}
+
+.xprospect-s11-media-card {
+	display: grid;
+	gap: 12px;
+}
+
+.xprospect-s11-media-card h3 {
+	margin: 0;
+	color: var(--xprospect-color-dark);
+	font-size: var(--wp--preset--font-size--large);
+}
+
+.xprospect-s11-media-card .xprospect-rc2-media {
+	min-height: 220px;
+}
+
+.xprospect-rc2-heading p,
+.xprospect-section-heading p,
+.xprospect-page-hero p {
+	max-width: 64ch;
+}
+
+@media (min-width: 768px) {
+	.xprospect-trust-grid,
+	.xprospect-s11-media-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.xprospect-stack-grid {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}
+
+@media (min-width: 1024px) {
+	.xprospect-hero--rc2 {
+		min-height: 740px;
+	}
+
+	.xprospect-hero--rc2 .xprospect-hero__title {
+		font-size: clamp(3.4rem, 4.9vw, 5.35rem);
+	}
+
+	.xprospect-rc2-section,
+	.xprospect-content-section {
+		padding-block: 64px;
+	}
+
+	.xprospect-rc2-heading {
+		margin-bottom: var(--wp--preset--spacing--32);
+	}
+
+	.xprospect-rc2-heading h2,
+	.xprospect-contact-cta h2 {
+		font-size: clamp(2rem, 3.25vw, 3rem);
+	}
+
+	.xprospect-page-hero {
+		padding-block: calc(var(--wp--preset--spacing--48) + 84px) var(--wp--preset--spacing--48);
+	}
+
+	.xprospect-page-hero h1 {
+		font-size: clamp(3rem, 4.45vw, 4.6rem);
+	}
+
+	.xprospect-trust-grid {
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+	}
+
+	.xprospect-stack-grid {
+		grid-template-columns: repeat(7, minmax(0, 1fr));
+	}
+
+	.xprospect-s11-media-grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.xprospect-reveal,
+	.xprospect-workflow-card,
+	.xprospect-workflow-visual::before {
+		animation: none;
+		transition: none;
+	}
+
+	.xprospect-reveal {
+		opacity: 1;
+		transform: none;
+	}
+}

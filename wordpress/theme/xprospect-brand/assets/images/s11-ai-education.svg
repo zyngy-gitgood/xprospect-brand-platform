@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+	<title id="title">AI education</title>
+	<desc id="desc">AI education and team enablement visual with learning modules.</desc>
+	<defs><linearGradient id="g" x1="260" y1="150" x2="980" y2="680" gradientUnits="userSpaceOnUse"><stop stop-color="#133A63"/><stop offset=".6" stop-color="#2F80ED"/><stop offset="1" stop-color="#3DD5F3"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#101828" flood-opacity=".13"/></filter></defs>
+	<rect width="1200" height="820" rx="48" fill="#F7F9FC"/><g filter="url(#s)"><rect x="230" y="170" width="740" height="500" rx="42" fill="#fff"/><circle cx="600" cy="300" r="86" fill="url(#g)"/><path d="M552 306h96M600 258v96" stroke="#fff" stroke-width="12" stroke-linecap="round"/><rect x="300" y="456" width="170" height="96" rx="24" fill="#EAF4FF"/><rect x="515" y="456" width="170" height="96" rx="24" fill="#DFF8FD"/><rect x="730" y="456" width="170" height="96" rx="24" fill="#EAF4FF"/></g><g fill="#133A63" font-family="Manrope, Inter, sans-serif" font-weight="800"><text x="334" y="514" font-size="24">Rules</text><text x="548" y="514" font-size="24">Training</text><text x="768" y="514" font-size="24">Adoption</text></g>
+</svg>

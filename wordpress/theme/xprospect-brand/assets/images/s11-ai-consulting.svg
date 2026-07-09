@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+	<title id="title">AI consulting workflow</title>
+	<desc id="desc">Premium blue and white AI consulting visual with business workflow cards.</desc>
+	<defs><linearGradient id="g" x1="160" y1="80" x2="1040" y2="760" gradientUnits="userSpaceOnUse"><stop stop-color="#133A63"/><stop offset=".55" stop-color="#2F80ED"/><stop offset="1" stop-color="#3DD5F3"/></linearGradient><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#101828" flood-opacity=".14"/></filter></defs>
+	<rect width="1200" height="820" rx="48" fill="#F7F9FC"/>
+	<circle cx="890" cy="180" r="260" fill="#3DD5F3" opacity=".14"/>
+	<circle cx="320" cy="650" r="240" fill="#2F80ED" opacity=".1"/>
+	<g filter="url(#s)"><rect x="178" y="170" width="844" height="500" rx="42" fill="#fff"/><rect x="218" y="212" width="270" height="126" rx="28" fill="#F7F9FC"/><rect x="712" y="212" width="270" height="126" rx="28" fill="#F7F9FC"/><rect x="218" y="482" width="270" height="126" rx="28" fill="#F7F9FC"/><rect x="712" y="482" width="270" height="126" rx="28" fill="#F7F9FC"/><circle cx="600" cy="410" r="118" fill="url(#g)"/><path d="M600 292v-62M600 528v62M482 410H350M718 410h132" stroke="#2F80ED" stroke-width="8" stroke-linecap="round" opacity=".35"/><path d="M548 428h104M548 392h104" stroke="#fff" stroke-width="12" stroke-linecap="round"/><circle cx="548" cy="392" r="10" fill="#fff"/><circle cx="652" cy="428" r="10" fill="#fff"/></g>
+	<g fill="#133A63" font-family="Manrope, Inter, sans-serif" font-weight="800"><text x="252" y="266" font-size="28">Business</text><text x="748" y="266" font-size="28">AI Design</text><text x="252" y="536" font-size="28">System</text><text x="748" y="536" font-size="28">Education</text></g>
+</svg>
